@@ -17,7 +17,13 @@
         <v-content>
           <router-view/>
         </v-content>
-
+        <v-footer
+            color="primary"
+            dark
+            absolute>
+            <v-spacer></v-spacer>
+            <div>&copy; {{ new Date().getFullYear() }}</div>
+          </v-footer>
     </v-app>
 </template>
 
