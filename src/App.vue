@@ -24,6 +24,10 @@
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
+          <v-divider></v-divider>
+          <site-menu>
+
+          </site-menu>
         </v-navigation-drawer>
         <v-content>
           <router-view/>
@@ -37,9 +41,10 @@
 <script>
 import SiteTitle from '@/views/site/title'
 import SiteFooter from '@/views/site/footer'
+import SiteMenu from '@/views/site/menu'
 
 export default {
-  components: { SiteTitle, SiteFooter },
+  components: { SiteTitle, SiteFooter, SiteMenu },
   name: 'App',
   data () {
     return {
